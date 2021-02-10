@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import './styles.sass';
+import './styles.css';
+import Routes from './src/navigation/Routes';
 
 function App() {
   return (
-    <div className="App" style={{ flexDirection: 'column', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <h1>E - Shop</h1>
-      <p>by ramakrishnareddy</p>
-    </div>
+    <Routes />
   );
 }
 
