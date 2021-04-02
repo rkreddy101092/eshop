@@ -1,12 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 import './styles.sass';
 import './styles.css';
-import Routes from './src/navigation/Routes';
+import { Provider } from 'react-redux';
+import store from '../src/redux/store';
+import Routes from './navigation/Routes';
 
 function App() {
   return (
-    <Routes />
+    <Provider store={store()}>
+      <Routes />
+    </Provider>
   );
 }
 
